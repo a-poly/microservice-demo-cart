@@ -12,4 +12,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/spring-cloud-aws-microservice-cart-1.war
+    - target/microservice-demo-cart-1.war
+    
