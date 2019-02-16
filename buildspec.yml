@@ -6,7 +6,7 @@ version: 0.1
 phases:
   pre_build:
     commands:
-      - docker login -u $DockerHubUser -p $DockerHubPassword
+      - docker login -u $(DockerHubUser) -p $(DockerHubPassword)
   build:
     commands:
       - echo Build started on `date`
