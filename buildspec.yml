@@ -23,7 +23,8 @@ phases:
       - echo Building the Docker image...          
       - docker build -t microservice-demo-cart:latest .
       - echo Pushing the Docker image...
-      - docker push microservice-demo-cart:latest      
+      - docker tag microservice-demo-cart:latest ${DOCKER_HUB_USER}/microservice-demo-cart:latest
+      - docker push ${DOCKER_HUB_USER}/microservice-demo-cart:latest          
 artifacts:
   files:
     - target/microservice-demo-cart-1.war
